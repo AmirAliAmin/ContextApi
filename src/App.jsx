@@ -1,12 +1,18 @@
 import React from 'react'
-
+import UserContextProvider from './context/UserContextProvider'
 import './App.css'
+import Login from './component/Login'
+import Profile from './component/Profile'
 
 function App() {
 
   return (
     <>
-      <h1>Amir Ali Amin</h1>
+    <UserContextProvider>
+      <Login/>
+      <Profile/>
+
+    </UserContextProvider>
     </>
   )
 }
